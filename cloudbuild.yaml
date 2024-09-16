@@ -8,8 +8,8 @@ steps:
 
 images: ['us-central1-docker.pkg.dev/gcp-1340501-cr-prod/python-repo/my-app:v1']
 
-#options:
-#  logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
   
 # Store images in Google Artifact Registry 
 
