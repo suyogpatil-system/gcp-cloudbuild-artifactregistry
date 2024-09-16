@@ -4,7 +4,7 @@ steps:
     args: [
             'build', '-t', 'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:${SHORT_SHA}', '.'
           ]
- # comment
+ # comment 
   # Docker push to Google Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push',  'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:${SHORT_SHA}']
