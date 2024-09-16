@@ -10,8 +10,8 @@ steps:
   #- name: 'gcr.io/cloud-builders/docker'
    # args: ['push',  'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:${SHORT_SHA}']
 
-#options:
- # logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
   
 # Store images in Google Artifact Registry 
 #images:
