@@ -4,11 +4,7 @@ steps:
     args: [
             'build',
             '-t',
-            'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:${SHORT_SHA}',
-            '-t',
-            'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:latest',
-            '--cache-from',
-            'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:latest',
+            'us-central1-docker.pkg.dev/My First Project/python-repo/my-app:${SHORT_SHA}'
             '.'
           ]
 
@@ -19,4 +15,4 @@ steps:
 # Store images in Google Artifact Registry 
 images:
   - us-central1-docker.pkg.dev/My First Project/python-repo/my-app:${SHORT_SHA}
-  - us-central1-docker.pkg.dev/My First Project/python-repo/my-app:latest
+  
